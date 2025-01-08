@@ -1,7 +1,6 @@
 numpy
 pandas
 seaborn
-warnings
 scipy
 scipy.stats
 sklearn.metrics
