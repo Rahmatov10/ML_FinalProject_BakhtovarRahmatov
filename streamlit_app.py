@@ -10,4 +10,4 @@ st.write('Hello world!')
 
 df = pd.read_csv('https://raw.githubusercontent.com/Rahmatov10/ML_FinalProject_BakhtovarRahmatov/refs/heads/master/Loan%20-%20Loan.csv')
 
-print(df)
+print(df.head())
