@@ -1,7 +1,7 @@
 numpy
 pandas
 matplotlib.pyplot
-seaborn as sns
+seaborn
 warnings
 scipy
 scipy.stats
