@@ -11,5 +11,7 @@ st.write('Hello world!')
 with st.expander('Исходные данные'):
     df = pd.read_csv('Loan-Loan.csv')
 
-pip install streamlit==1.10.0
-pip install --upgrade streamlit
+python3.10 -m venv streamlit_env
+streamlit_env\Scripts\activate
+pip install streamlit
+pip install scikit-learn
