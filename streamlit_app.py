@@ -8,6 +8,13 @@ st.title('Final Project ML Course. Bakhtovar Rahmatov. Loan approval classifier'
 st.write('Hello world!')
 # Загрузка данных
 
-df = pd.read_csv("Loan - Loan.csv")
+with st.expander('Исходные данные'):
+    df = pd.read_csv("Loan - Loan.csv")
+  
+    st.write('**X**')
+    X_raw = df.drop('loan_status', axis=1)  # 'left' - целевая переменная (увольнение)
+    X_raw
 
-print(df)
+    st.write('**y**')
+    y_raw = df['loan_status']
+    y_raw
