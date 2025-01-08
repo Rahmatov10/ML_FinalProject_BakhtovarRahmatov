@@ -9,3 +9,12 @@ st.write('Hello world!')
 
 df = pd.read_csv("Raw_data")
 print(df.head())
+
+with st.expander('Data'):
+  st.write("X")
+  X_raw = df.drop('loan_status', axis=1)
+  st.dataframe(X_raw)
+
+  st.write("y")
+  y_raw = df.loan_status
+  st.dataframe(y_raw)
