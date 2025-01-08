@@ -10,4 +10,5 @@ st.write('Hello world!')
 # Загрузка данных
 with st.expander('Исходные данные'):
     df = pd.read_csv('Loan-Loan.csv')
-pip install Python
+
+pip install --upgrade pip
