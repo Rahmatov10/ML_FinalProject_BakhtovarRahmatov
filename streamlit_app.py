@@ -11,4 +11,4 @@ st.write('Hello world!')
 with st.expander('Исходные данные'):
     df = pd.read_csv('Loan-Loan.csv')
 
-python3.8 -m venv myenv
+pip install streamlit==1.10.0
