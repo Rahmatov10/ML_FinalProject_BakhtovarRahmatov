@@ -2,7 +2,7 @@ numpy
 pandas
 seaborn
 scipy
-scipy.stats
+
 sklearn.metrics
 sklearn.preprocessing
 sklearn.model_selection
