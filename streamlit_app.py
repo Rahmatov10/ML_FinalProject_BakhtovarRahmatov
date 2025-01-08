@@ -15,5 +15,5 @@ with st.expander('Исходные данные'):
     X_raw
 
     st.write('**y**')
-    y_raw = df.loan_status
+    y_raw = df[loan_status]
     y_raw
