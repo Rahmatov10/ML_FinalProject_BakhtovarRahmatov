@@ -1,4 +1,6 @@
-import streamlit as st
+pip install --upgrade streamlit
+
+
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -10,8 +12,3 @@ st.write('Hello world!')
 # Загрузка данных
 with st.expander('Исходные данные'):
     df = pd.read_csv('Loan-Loan.csv')
-
-python3.10 -m venv streamlit_env
-streamlit_env\Scripts\activate
-pip install streamlit
-pip install scikit-learn
