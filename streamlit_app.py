@@ -11,4 +11,4 @@ st.write('Hello world!')
 with st.expander('Исходные данные'):
     df = pd.read_csv('Loan-Loan.csv')
 
-pip install --upgrade pip
+python3.8 -m venv myenv
