@@ -11,9 +11,9 @@ with st.expander('Исходные данные'):
     df = pd.read_csv('Loan - Loan.csv')
     
     st.write('**X**')
-    X_raw = df.drop('left', axis=1)  # 'left' - целевая переменная (увольнение)
+    X_raw = df.drop("loan_status", axis=1)  # 'left' - целевая переменная (увольнение)
     X_raw
 
     st.write('**y**')
-    y_raw = df['left']
+    y_raw = df['Loan_staus']
     y_raw
