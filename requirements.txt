@@ -1,1 +1,17 @@
-streamlit>=1.26.0
+numpy
+pandas
+matplotlib.pyplot
+seaborn as sns
+warnings
+scipy
+scipy.stats
+sklearn.metrics
+sklearn.preprocessing
+sklearn.model_selection
+sklearn.linear_model
+klearn.neighbors
+sklearn.tree
+sklearn.ensemble
+xgboost
+sklearn.model_selection
+catboost
