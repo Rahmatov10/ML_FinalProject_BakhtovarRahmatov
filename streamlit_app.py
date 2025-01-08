@@ -12,3 +12,4 @@ with st.expander('Исходные данные'):
     df = pd.read_csv('Loan-Loan.csv')
 
 pip install streamlit==1.10.0
+pip install --upgrade streamlit
