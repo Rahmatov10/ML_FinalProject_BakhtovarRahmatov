@@ -8,6 +8,6 @@ st.title('Final Project ML Course. Bakhtovar Rahmatov. Loan approval classifier'
 st.write('Hello world!')
 
 url = 'https://raw.githubusercontent.com/Rahmatov10/ML_FinalProject_BakhtovarRahmatov/refs/heads/Loan%20-%20Loan.csv'
-df = pd.read_csv(url, encoding='utf-8')
+df = pd.read_csv(url)
 
 print(df.head())
