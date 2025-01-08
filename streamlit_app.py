@@ -8,7 +8,7 @@ st.title('Final Project ML Course. Bakhtovar Rahmatov. Loan approval classifier'
 st.write('Hello world!')
 # Загрузка данных
 
-df = pd.read_csv('Loan - Loan.csv')
+df = pd.read_csv('https://github.com/Rahmatov10/ML_FinalProject_BakhtovarRahmatov/blob/master/Loan%20-%20Loan.csv')
 
 with st.expander('Data'):
   st.write("X")
