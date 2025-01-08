@@ -8,7 +8,7 @@ st.title('Final Project ML Course. Bakhtovar Rahmatov. Loan approval classifier'
 st.write('Hello world!')
 # Загрузка данных
 
-df = pd.read_csv('Loan - Loan.csv', error_bad_lines=False, warn_bad_lines=True)
+df = pd.read_csv('Loan - Loan.csv')
 
 with st.sidebar:
   st.header("Введите признаки: ")
