@@ -1,4 +1,5 @@
 pip install --upgrade streamlit
+python3.10 -m venv streamlit_env
 
 
 import pandas as pd
