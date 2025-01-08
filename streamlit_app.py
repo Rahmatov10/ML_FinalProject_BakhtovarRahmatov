@@ -7,8 +7,8 @@ st.title('Final Project ML Course. Bakhtovar Rahmatov. Loan approval classifier'
 
 st.write('Hello world!')
 
-df = pd.read_csv("Raw_data")
-print(df.head())
+df = pd.read_csv("loan_data.csv")
+
 
 with st.expander('Data'):
   st.write("X")
