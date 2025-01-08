@@ -2,14 +2,3 @@ numpy
 pandas
 seaborn
 scipy
-
-sklearn.metrics
-sklearn.preprocessing
-sklearn.model_selection
-sklearn.linear_model
-klearn.neighbors
-sklearn.tree
-sklearn.ensemble
-xgboost
-sklearn.model_selection
-catboost
