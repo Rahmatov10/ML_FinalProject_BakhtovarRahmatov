@@ -9,6 +9,7 @@ st.write('Hello world!')
 # Загрузка данных
 
 df = pd.read_csv('Loan - Loan.csv')
+ print(df.head())
 
 with st.sidebar:
   st.header("Введите признаки: ")
