@@ -23,7 +23,7 @@ with st.sidebar:
   st.header("Введите признаки: ")
   person_age = st.slider("age (y)", 18, 1, 150)
   person_gender = st.selectbox('Gender', ('male', 'female'))
-  person_income = st.slider("income (USD/year)", 0, 200000, 40000)
+  person_income = st.slider("income (USD/year)", 0, 1, 100,000)
   person_education = st.selectbox("Educaiton level", ('Associate', 'Bachelor', 'Doctorate', 'High School', 'Master'))
   person_emp_exp = st.slider("Experience (years)", 0, 50, 100)
   person_home_ownership = st.selectbox("Home ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
