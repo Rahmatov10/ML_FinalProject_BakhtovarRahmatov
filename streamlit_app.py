@@ -27,7 +27,7 @@ with st.sidebar:
   person_education = st.selectbox("Educaiton level", ('Associate', 'Bachelor', 'Doctorate', 'High School', 'Master'))
   person_emp_exp = st.slider("Experience (years)", 0, 50, 100)
   person_home_ownership = st.selectbox("Home ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
-  loan_amnt = st.slider("Loan amount (USD)", 0, 50,000, 100,000)
+  loan_amnt = st.slider("Loan amount (USD)", 0, 50000, 100000)
   loan_intent = st.selectbox("Loan intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
   loan_int_rate = st.slider("Loan interest rate (%)", 1, 15, 30) 
   loan_pencent_income = st.slider("Loan amount / Income ", 0, 0.5, 1) 
