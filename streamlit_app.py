@@ -20,23 +20,42 @@ from the data. Now, bismillah ...
 
 """)
 
-st.subheader("3. EDA")
+st.subheader("1. EDA")
 st.write("""
-
+- Analyses of numerical columns. 
+- Deleting outliers.
+- Recreating DataFrame and visual display of numerical factors distribution
 """)
 
-st.subheader("4. Preprocessing")
+st.subheader("2. Preprocessing")
 st.write("""
-
+- Correlation matrix and heatmap for numerical factors.
+- Target Mean Encoding
+- recreating correlation matrix for all the factors and target output
 """)
 
-
-st.subheader("5. Colclusion")
+st.subheader("3. Models")
 st.write("""
+- Logistics Regression
+- Random Forest
+- Catboost
+- KNN
 
 """)
 
 st.markdown("---")
+
+st.subheader("4. Colclusion")
+st.write("""
+
+All the four mentioned models and detailed analysis were completed on Jupyter notebook.
+Model with the best accuracy resultL 93% Random Forest is used in this model
+
+""")
+
+st.markdown("---")
+
+
 
 
 
