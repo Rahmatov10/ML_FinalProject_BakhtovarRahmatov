@@ -60,7 +60,7 @@ with st.expander('Визуализация данных'):
     input_data = pd.concat([input_df, X_raw], axis=0)
 
 # Кодирование категориальных переменных
-encode = ['person_age', 'person_gender', 'person_education', 'person_home_ownership', 'loan_intent', 'previous_loan_defaults_on_file']
+encode = ['person_gender', 'person_education', 'person_home_ownership', 'loan_intent', 'previous_loan_defaults_on_file']
 input_data_encoded = pd.get_dummies(input_data, columns=encode)
 
 # Отделяем строку с вводом пользователя
