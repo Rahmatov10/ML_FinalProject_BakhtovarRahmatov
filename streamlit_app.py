@@ -25,14 +25,14 @@ with st.sidebar:
   person_gender = st.selectbox('Gender', ('male', 'female'))
   person_income = st.slider("income (USD/year)", 0, 1000, 1000000)
   person_education = st.selectbox("Educaiton level", ('Associate', 'Bachelor', 'Doctorate', 'High School', 'Master'))
-  person_emp_exp = st.slider("Experience (years)", 0, 50, 100)
+  person_emp_exp = st.slider("Experience (years)", 0, 1, 100)
   person_home_ownership = st.selectbox("Home ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
-  loan_amnt = st.slider("Loan amount (USD)", 0, 50000, 100000)
+  loan_amnt = st.slider("Loan amount (USD)", 0, 1, 100000)
   loan_intent = st.selectbox("Loan intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
-  loan_int_rate = st.slider("Loan interest rate (%)", 1, 15, 30) 
+  loan_int_rate = st.slider("Loan interest rate (%)", 1, 1, 30) 
  
-  cb_person_cred_hist_length = st.slider("Credit history length (y) ", 0, 20, 40)
-  credit_score = st.slider("Credit score (points) ", 100, 1000)
+  cb_person_cred_hist_length = st.slider("Credit history length (y) ", 0, 1, 40)
+  credit_score = st.slider("Credit score (points) ", 100, 10, 1000)
   previous_loan_defaults_on_file = st.selectbox('Defaults', ('Yes', 'No'))
 
 # Визуализация данных
