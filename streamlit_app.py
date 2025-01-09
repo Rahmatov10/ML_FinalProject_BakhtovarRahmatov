@@ -37,7 +37,6 @@ with st.sidebar:
 
 # Визуализация данных
 with st.expander('Визуализация данных'):
-    st.scatter_chart(data=df, x='person_income', y='loan_status', color='left')
     st.bar_chart(data=df['person_gender'].value_counts())
     st.bar_chart(data=df['loan_intent'].value_counts())
 
