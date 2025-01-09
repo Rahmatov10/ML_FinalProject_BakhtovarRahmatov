@@ -12,7 +12,7 @@ df = pd.read_csv("loan_data.csv")
 
 with st.expander('Data'):
   st.write("X")
-  X_raw = df.drop('loan_status', axis=1)
+  X_raw = df.drop(['loan_status', 'loan_percent_income'], axis=1)
   st.dataframe(X_raw)
 
   st.write("y")
@@ -30,7 +30,7 @@ with st.sidebar:
   loan_amnt = st.slider("Loan amount (USD)", 0, 50000, 100000)
   loan_intent = st.selectbox("Loan intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
   loan_int_rate = st.slider("Loan interest rate (%)", 1, 15, 30) 
-  loan_pencent_income = st.slider("loan_pencent_income", 0.00, 0.01, .99) 
+ 
   cb_person_cred_hist_length = st.slider("Credit history length (y) ", 0, 20, 40)
   credit_score = st.slider("Credit score (points) ", 100, 1000)
   previous_loan_defaults_on_file = st.selectbox('Defaults', ('Yes', 'No'))
@@ -50,7 +50,6 @@ with st.expander('Визуализация данных'):
             'loan_amnt': loan_amnt,
             'loan_intent': loan_intent,
             'loan_int_rate': loan_int_rate,
-            'loan_pencent_income': loan_pencent_income,
             'cb_person_cred_hist_length': cb_person_cred_hist_length,
             'credit_score':credit_score,
             'previous_loan_defaults_on_file': previous_loan_defaults_on_file}  # Добавлен пол
