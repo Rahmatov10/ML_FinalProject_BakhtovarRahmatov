@@ -22,4 +22,16 @@ with st.expander('Data'):
 with st.sidebar:
   st.header("Введите признаки: ")
   person_age = st.slider("age (y)", 18, 50, 99)
- 
+  person_gender = st.selectbox('Gender', ('Male', 'Female'))
+  person_income = st.slider("income (USD/year)", 0, 200000, 40000)
+  person_education = st.selectbox("Educaiton level", ('Associate', 'Bachelor', 'Doctorate', 'High School', 'Master'))
+  person_emp_exp = st.slider("Experience (years)", 0, 50, 100)
+  person_home_ownership = st.selectbox("Home ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
+  loan_amnt = st.slider("Loan amount (USD)", 0, 50,000, 100,000)
+  loan_intent = st.selectbox("Loan intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
+  loan_int_rate = st.slider("Loan interest rate (%)", 1, 15, 30) 
+  loan_pencent_income = st.slider("Loan amount / Income ", 0, 0.5, 1) 
+  cb_person_cred_hist_length = st.slider("Credit history length (y) ", 0, 20, 40)
+  credit score = st.slider("Credit score (points) ", 10, 400, 1000)
+  previous_loan_defaults_on_file = st.selectbox('Defaults', ('Yes', 'No'))
+  
