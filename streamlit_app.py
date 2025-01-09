@@ -139,7 +139,7 @@ prediction_proba = rf_clf.predict_proba(X_input)
 
 # Отображение результата
 st.subheader('Probability of Loan approval')
-df_prediction_proba = pd.DataFrame(prediction_proba, columns=['Approved', 'Rejceted'])
+df_prediction_proba = pd.DataFrame(prediction_proba, columns=['Rejected', 'approved'])
 st.dataframe(df_prediction_proba)
 
 # Вывод результата
