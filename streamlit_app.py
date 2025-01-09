@@ -91,7 +91,7 @@ st.dataframe(df_prediction_proba)
 
 # Вывод результата
 if prediction[0] == 1:
-    st.success("Loan rejected")
-else:
     st.success("Loan approved")
+else:
+    st.success("Loan rejected")
   
