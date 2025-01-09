@@ -34,4 +34,11 @@ with st.sidebar:
   cb_person_cred_hist_length = st.slider("Credit history length (y) ", 0, 20, 40)
   credit_score = st.slider("Credit score (points) ", 100, 1000)
   previous_loan_defaults_on_file = st.selectbox('Defaults', ('Yes', 'No'))
+
+# Визуализация данных
+with st.expander('Визуализация данных'):
+    st.scatter_chart(data=df, x='person_income', y='loan_status', color='left')
+    st.bar_chart(data=df['person_gender'].value_counts())
+    st.bar_chart(data=df['loan_intent'].value_counts())
+
   
