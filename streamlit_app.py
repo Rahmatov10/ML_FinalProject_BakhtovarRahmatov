@@ -32,6 +32,6 @@ with st.sidebar:
   loan_int_rate = st.slider("Loan interest rate (%)", 1, 15, 30) 
   loan_pencent_income = st.slider("Loan amount / Income ", 0, 1) 
   cb_person_cred_hist_length = st.slider("Credit history length (y) ", 0, 20, 40)
-  credit score = st.slider("Credit score (points) ", 100, 1000)
+  credit_score = st.slider("Credit score (points) ", 100, 1000)
   previous_loan_defaults_on_file = st.selectbox('Defaults', ('Yes', 'No'))
   
