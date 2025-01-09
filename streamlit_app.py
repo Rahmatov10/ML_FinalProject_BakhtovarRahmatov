@@ -58,4 +58,19 @@ with st.expander('Визуализация данных'):
 
   # Объединяем с исходными данными для корректного кодирования
     input_data = pd.concat([input_df, X_raw], axis=0)
+
+# Кодирование категориальных переменных
+encode = ['person_age', 'person_gender', 'person_education', 'person_home_ownership', 'loan_intent', 'previous_loan_defaults_on_file']
+input_data_encoded = pd.get_dummies(input_data, columns=encode)
+
+# Отделяем строку с вводом пользователя
+X_input = input_data_encoded[:1]
+
+# Обработка категориальных переменных для основного набора данных
+df_encoded = pd.get_dummies(X_raw, columns=encode)
+
+# Разделение данных на обучающую и тестовую выборки
+X = df_encoded
+y = y_raw
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
   
