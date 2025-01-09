@@ -30,7 +30,7 @@ with st.sidebar:
   loan_amnt = st.slider("Loan amount (USD)", 0, 50000, 100000)
   loan_intent = st.selectbox("Loan intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
   loan_int_rate = st.slider("Loan interest rate (%)", 1, 15, 30) 
-  loan_pencent_income = st.slider("Loan amount / Income ", 0.00, 0.01, 1.00) 
+  loan_pencent_income = st.slider("loan_pencent_income", 0.00, 0.01, .99) 
   cb_person_cred_hist_length = st.slider("Credit history length (y) ", 0, 20, 40)
   credit_score = st.slider("Credit score (points) ", 100, 1000)
   previous_loan_defaults_on_file = st.selectbox('Defaults', ('Yes', 'No'))
