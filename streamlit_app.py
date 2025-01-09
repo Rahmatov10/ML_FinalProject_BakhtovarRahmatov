@@ -20,9 +20,33 @@ from the data. Now, bismillah ...
 
 """)
 
+st.subheader("1. EDA")
+st.write("""
 
+- Analyses of numerical columns. 
+- Deleting outliers.
+- Recreating DataFrame and visual display of numerical factors distribution
 
-st.markdown("---")
+""")
+
+st.subheader("2. Preprocessing")
+st.write("""
+
+- Correlation matrix and heatmap for numerical factors.
+- Target Mean Encoding
+- recreating correlation matrix for all the factors and target output
+
+""")
+
+st.subheader("3. Models")
+st.write("""
+
+- Logistics Regression
+- Random Forest
+- Catboost
+- KNN
+
+""")
 
 st.subheader("4. Colclusion")
 st.write("""
