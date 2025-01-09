@@ -5,7 +5,38 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 st.title('Final Project ML Course. Bakhtovar Rahmatov. Loan approval classifier')
 
-st.titel(ML final Project: Loan classifier)
+
+# 1) Project
+st.subheader("Loan classier")
+st.write("""
+**Data source**: Kaggle.
+
+Why did i select this topic:
+#### For the final project, I chose to build a classifier model for new loan requests. I chose this topic because back in 2015, 
+one of my co-workers built a "lead-scoring" model, which gives "grades" to potential new customers, and first phone calls would be 
+made based on the calculated "grade". This model showed significant improvement of lead conversion and sales. I was always curious how 
+he used historical data to create this model on a simple Excel spreadsheet. Thanks to this course, I learned about ML and the power it gives to get insights 
+from the data. Now, bismillah ... 
+
+""")
+
+st.subheader("3. EDA")
+st.write("""
+
+""")
+
+st.subheader("4. Preprocessing")
+st.write("""
+
+""")
+
+
+st.subheader("5. Colclusion")
+st.write("""
+
+""")
+
+st.markdown("---")
 
 
 
