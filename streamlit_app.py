@@ -81,8 +81,8 @@ rf_clf.fit(X_train, y_train)
 y_pred_clf = rf_clf.predict(X_test)
 
 # Прогнозирование
-prediction = clf.predict(X_input)
-prediction_proba = clf.predict_proba(X_input)
+prediction = rf_clf.predict(X_input)
+prediction_proba = rf_clf.predict_proba(X_input)
 
 # Отображение результата
 st.subheader('Probability of Loan approval')
