@@ -56,4 +56,6 @@ with st.expander('Визуализация данных'):
             'previous_loan_defaults_on_file': previous_loan_defaults_on_file}  # Добавлен пол
     input_df = pd.DataFrame(data, index=[0])
 
+  # Объединяем с исходными данными для корректного кодирования
+    input_data = pd.concat([input_df, X_raw], axis=0)
   
