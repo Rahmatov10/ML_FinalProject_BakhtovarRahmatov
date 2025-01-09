@@ -22,8 +22,6 @@ from the data. Now, bismillah ...
 
 
 
-""")
-
 st.markdown("---")
 
 st.subheader("4. Colclusion")
