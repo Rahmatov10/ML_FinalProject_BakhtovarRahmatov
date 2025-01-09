@@ -74,8 +74,11 @@ y = y_raw
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Обучение модели RandomForestClassifier с корректным параметром max_features
-clf = RandomForestClassifier(n_estimators=7, max_features='sqrt', n_jobs=2, random_state=1)
-clf.fit(X_train, y_train)
+rf_clf = RandomForestClassifier(n_estimators=200, random_state=42)
+rf_clf.fit(X_train, y_train)
+
+# Прогнозирование и оценка модели
+y_pred_clf = rf_clf.predict(X_test)
 
 # Прогнозирование
 prediction = clf.predict(X_input)
@@ -83,7 +86,7 @@ prediction_proba = clf.predict_proba(X_input)
 
 # Отображение результата
 st.subheader('Probability of Loan approval')
-df_prediction_proba = pd.DataFrame(prediction_proba, columns=['Останется', 'Уволится'])
+df_prediction_proba = pd.DataFrame(prediction_proba, columns=['Approved', 'Rejceted'])
 st.dataframe(df_prediction_proba)
 
 # Вывод результата
