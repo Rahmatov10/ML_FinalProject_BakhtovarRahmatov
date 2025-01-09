@@ -23,7 +23,3 @@ with st.sidebar:
   st.header("Введите признаки: ")
   person_age = st.slider("age (y)", 18, 50, 99)
  
-
-
-
- 13  loan_status
